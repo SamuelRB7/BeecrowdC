@@ -6,19 +6,19 @@ int main()
     scanf("%lf", &N);
     if(N >= 0 && N <= 25.00)
     {
-        printf("intervalo [0,25]\n");
+        printf("Intervalo [0,25]\n");
     }
         else if(N > 25 && N <= 50)
         {
-            printf("intervalo (25,50]\n");
+            printf("Intervalo (25,50]\n");
         }
             else if(N > 50 && N <= 75)
             {
-                printf("intervalo (50,75]\n");
+                printf("Intervalo (50,75]\n");
             }
                 else if(N > 75 && N <= 100)
                 {
-                    printf("intervalo (75,100]\n");
+                    printf("Intervalo (75,100]\n");
                 }
                     else
                     {
