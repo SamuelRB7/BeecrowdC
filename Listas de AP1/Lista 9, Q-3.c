@@ -3,14 +3,13 @@
 int main()
 {
     char str[50], OP;
-    int Com, Com2 = 0, i = 0;
-    getchar();
+    int Com = 0, Com2 = 0, i = 0;
 
     fgets(str, 50, stdin);
 
-    scanf(" %c", &OP);
+    str[strcspn(str, "\n")] = '\0';
 
-    
+    scanf(" %c", &OP);
 
     switch(OP)
     {
@@ -19,20 +18,20 @@ int main()
         
         Com = strlen(str);
         break;
-//================================================
+
         case 'b':
         case 'B':
 
         while(str[i] != '\0')
         { 
-            i++;
             Com2++;
+            i++;
         }
         break;
     }
 
-    printf("%d", Com);
-    printf("%d", Com2);
+    printf("%d\n", Com);
+    printf("%d\n", Com2);
     
     return 0;
 }
